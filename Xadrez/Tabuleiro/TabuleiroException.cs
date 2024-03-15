@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Xadrez.tabuleiro
 {
-    internal class TabuleiroException
+    internal class TabuleiroException : Exception
     {
+        public TabuleiroException(string msg) : base(msg) { }
     }
 }
